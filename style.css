@@ -1,0 +1,697 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Makes space between logo and rest */
+    padding: 14px 36px;
+    background-color: #EAEFEF;
+    border-bottom: 0.5px solid gray;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Menu items */
+.menu {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    color: #666;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+/* Register button */
+.register-btn {
+    background-color: rgb(10, 168, 221);
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .menu {
+        max-width: 100%;
+    }
+
+    .register-btn {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+                                                      /* -------------------------Navbar-Completed----------------------- */
+
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #F1EFEC;
+    gap: 60px;
+    border-bottom: 0.5px solid gray;
+    flex-wrap: wrap; /* Helps for small screens */
+}
+
+.banner-text {
+    max-width: 400px;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.banner-text button {
+    background-color: #c8d4e0;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner-text button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.banner-image img{
+    width: 100%;
+    height: 220px;
+    background-color: #c8d4e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.banner-image:hover img {
+  transform: rotateX(-18deg) rotateY(10deg) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .banner-text {
+        max-width: 100%;
+    }
+
+    .banner-image {
+        justify-content: center;
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+                                                      /* -------------------------Banner-Completed----------------------- */
+
+
+
+
+.clients-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #EAEFEF;
+  border-bottom: 0.5px solid gray;
+
+}
+
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+
+p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+/* Logo Row */
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.clients-logos img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.clients-logos img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+                                                   /* -------------------------Client Section-Completed----------------------- */
+
+
+.container {
+
+ 
+ 
+ 
+    flex-direction: column;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #D4C9BE;
+    border-bottom: 0.5px solid gray; 
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.sub  {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+
+.cards {
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.icon-container {
+  background-color: #e9f5ec;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.icon-container img {
+  color: #333;
+  font-size: 18px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+                                                   /* -------------------------Power of Blockchain-Completed----------------------- */
+
+.helping {
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #B8CFCE;
+    
+    border-bottom: 0.5px solid gray;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: black;
+}
+
+.left p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 50px;
+  padding-top: 10px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+img {
+  color: #333;
+  height: 40px;
+  width: 40px;
+}
+
+.stat h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stat p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stat {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+                                                   /* -------------------------Helping Blockchain-Completed----------------------- */
+
+.future {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.future h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.future p {
+  font-size: 15px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.boards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.board {
+  background-color: #e3eaf3;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 280px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.board:hover {
+  transform: translateY(-5px);
+}
+
+.board img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-color: #c4ccda;
+}
+
+.board-content {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 5px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.board:hover .board-content {
+  background-color: #d9d9d9;
+  border: 2px solid #304c62;
+  
+}
+
+.board-content p {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #20c997;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .boards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+                                                   /* -------------------------Blockchain Future-Completed----------------------- */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background-color: #d1c4b2;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Image container */
+.contact-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+    object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.contact-image img:hover {
+   transform: scale(1.05);
+  opacity: 2;
+}
+
+
+/* Form container */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-form h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #304c62;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00c285;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-image,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
+
+
+                                                   /* -------------------------Contact-Completed----------------------- */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.footer-section p {
+  color: white;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 60px 20px;
+  background-color: #7F8CAA;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+   width: 50px;
+  height: auto;
+  cursor: pointer;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+   transform: scale(1.5);
+  opacity: 2;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.email-form input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.email-form button {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #5115b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .email-form {
+    width: 100%;
+  }
+
+  .email-form input {
+    width: 100%;
+  }
+}
+
+                                                   /* -------------------------Footer-Completed----------------------- */
